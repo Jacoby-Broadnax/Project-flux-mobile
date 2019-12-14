@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>TV FLUX</title>
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1,user-scalable=0" />
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/js/materialize.min.js"></script>
+    <link rel="stylesheet" href="main.css">
+    <script type="module" src="https://unpkg.com/x-frame-bypass"></script>
+    <link rel="stylesheet" href="https://cdn.plyr.io/1.8.2/plyr.css">
+    <link rel="stylesheet" href="vivify.min.css">
+</head>
+
+<body class="vivify fadeIn delay-2000" onload="player.play();">
+
+ <link href="https://vjs.zencdn.net/7.2.3/video-js.css" rel="stylesheet">
+
+
+<div class="open-video-container">
+    
+    <video preload="none" id="player" autoplay controls crossorigin></video>
+    <script src="https://cdn.plyr.io/1.8.2/plyr.js"></script>
+    <script src="https://cdn.jsdelivr.net/hls.js/latest/hls.js"></script>
+</div>
+
+<script>
+(function () {
+  var video = document.querySelector('#player');
+
+  if (Hls.isSupported()) {
+    var hls = new Hls();
+    hls.loadSource('https://peer3.ustv.to/ABC/myStream/playlist.m3u8?wmsAuthSign=c2VydmVyX3RpbWU9MTIvMTMvMjAxOSA5OjI0OjE0IFBNJmhhc2hfdmFsdWU9ZU1vaDdIcmtneXlKMlZDVUZGUE1ndz09JnZhbGlkbWludXRlcz0zNjAmc3RybV9sZW49MA==');
+    hls.attachMedia(video);
+    hls.on(Hls.Events.MANIFEST_PARSED,function() {
+      video.play();
+    });
+  }
+  
+  plyr.setup(video);
+})();
+</script>
+
+ <script>
+ var player = videojs('hls-example');
+ player.play();
+ </script>
+</body>
+
+</html>

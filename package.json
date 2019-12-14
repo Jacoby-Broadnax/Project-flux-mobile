@@ -1,0 +1,5 @@
+{
+  "dependencies": {
+    "videojs-chromecast": "^2.0.8"
+  }
+}
