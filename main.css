@@ -90,7 +90,11 @@ body.darkclass .tabs .indicator {
 
 .text-container > p {margin-top: -8px;margin-left: 2px;;text-align: left;font-size: 12px;;}
 
-.channel-button {width: 100%;border: none; background-color: transparent;}
+.channel-button {width: 100%;border: none; background-color: transparent;border-radius: 7px;}
+
+.tabs .tab a:focus, .tabs .tab a:focus.active {background-color: transparent !important;color: black !important;}
+
+.tabs .tab a:hover {color: black !important;}
 
 .channel {float: left;}
 
