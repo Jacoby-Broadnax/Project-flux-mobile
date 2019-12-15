@@ -301,7 +301,7 @@
     <script>
       $(window).scroll(function () {
         var scroll = $(window).scrollTop();
-        if (scroll > 225) {
+        if (scroll > 0) {
           $("#playback").addClass("scrolled");
         } else {
           $("#playback").removeClass("scrolled");
@@ -323,7 +323,7 @@
 <script>
   $(window).scroll(function () {
     var scroll = $(window).scrollTop();
-    if (scroll > 225) {
+    if (scroll > 0) {
       $("#playbackindicator").addClass("on");
     } else {
       $("#playbackindicator").removeClass("on");
