@@ -319,7 +319,15 @@
         }
       });
     </script>
-
+<script>
+$("a:link").on("click", function(e){
+    if($(this).attr("href").match("^#")) {
+        e.preventDefault();
+        //some other stuff you want to do with the hash, like smooth scroll to anchor
+        $('html, body').animate({ scrollTop: $($(this).attr("href")).offset().top }, 'fast');
+    }
+});
+</script>
 <script>
   $(window).scroll(function () {
     var scroll = $(window).scrollTop();
