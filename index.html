@@ -215,7 +215,7 @@
 </head>
 
 <body class="vivify fadeIn delay-1000">
-  <div>
+  <div class="nav">
     <div class="logo-container">
       <div><img src="/Branding/tvflux logo app.svg"></div>
     </div>
@@ -228,7 +228,7 @@
 
 
     <div class="playback-container" style="margin-top: 50px;;">
-      <img class="playback-loader" src="Branding/loader.svg">
+    
       <iframe id="playback" src="https://projectFlux.netlify.com/abc.html" allowfullscreen></iframe>
 
     </div>
@@ -250,7 +250,7 @@
       }
     </script>
     <div class="sticky-container" id="up">
-      <div class="playing">
+      <div id="playbackindicator" class="playing" >
         <div id="preview"></div>
       </div>
       <ul class="tabs">
@@ -320,7 +320,16 @@
       });
     </script>
 
-
+<script>
+  $(window).scroll(function () {
+    var scroll = $(window).scrollTop();
+    if (scroll > 225) {
+      $("#playbackindicator").addClass("on");
+    } else {
+      $("#playbackindicator").removeClass("on");
+    }
+  });
+</script>
 
 
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
