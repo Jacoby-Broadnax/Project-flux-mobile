@@ -54,7 +54,7 @@ body.darkclass .tabs .indicator {
 
 #playback {width: 106%; border: none;height: 220px;left: 0px; z-index: 501; z-index: 501;top: 50px;;margin-top: 5px;transition: 0.15s ease;;}
 
-  #playback.scrolled {width: 50px;position: fixed; bottom: -10px;height: 110px;width:177.57px;margin-top: 11px;left:6.5%;}
+  #playback.scrolled {width: 50px;position: fixed; bottom: -20px;height: 130px;width:177.57px;left:5%;margin-top: 0px;;padding-bottom: 10px; background-color: white;padding-top: 10px;}
 
   .playback-container {width: 100%;}
 
@@ -122,4 +122,4 @@ body.darkclass .tabs .indicator {
 
 .loader {position: fixed; left: 0px; bottom: -15px; width: 100%;;;}
 #playbackindicator {transition: 0.2s ease;;}
-#playbackindicator.on {padding-left: 60px;}
+#playbackindicator.on {padding-left: 75px;}
