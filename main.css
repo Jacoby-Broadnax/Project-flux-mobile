@@ -54,7 +54,7 @@ body.darkclass .tabs .indicator {
 
 #playback {width: 106%; border: none;height: 220px;left: 0px; z-index: 501; z-index: 501;top: 50px;;margin-top: 5px;transition: 0.15s ease;;}
 
-  #playback.scrolled {width: 50px;position: fixed; bottom: -10px;height: 100px;width:177.57px;margin-top: 11px;left: 5%;}
+  #playback.scrolled {width: 50px;position: fixed; bottom: -10px;height: 110px;width:177.57px;margin-top: 11px;left:6.5%;}
 
   .playback-container {width: 100%;}
 
