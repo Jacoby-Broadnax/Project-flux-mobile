@@ -52,7 +52,7 @@ body.darkclass .tabs .indicator {
 
   /*-------------------------------------Play Back Container------------------------------------------*/
 
-#playback {width: 106%; border: none;height: 220px;left: 0px; z-index: 501; z-index: 501;top: 50px;;margin-top: 5px;transition: 0.15s ease;;}
+#playback {width: 106%; border: none;height: 220px;left: 0px; z-index: 501; z-index: 501;;margin-top: 5px;transition: 0.15s ease;position:relative}
 
   #playback.scrolled {width: 50px;position: fixed; bottom: -20px;height: 130px;width:177.57px;left:5%;margin-top: 0px;;padding-bottom: 10px; background-color: white;padding-top: 10px;}
 
@@ -78,15 +78,23 @@ body.darkclass .tabs .indicator {
   .stream-list > button {background-color: white; border: solid 1px lightgray; padding: 5px;padding-left: 7px; padding-right: 7px;margin-left: 6px; border-radius: 20px;margin-top: 10px;float: left;;}
 
   .stream-list {margin-top: -40px;margin-left: 125px ;position: absolute; z-index: 625;top: 360px; left: 0px;;display: none;}
+
+  .tv-guide {width:100%;height:545px;filter: invert() brightness(2) ;float: left;margin-top: -80px;border: none;position: relative;z-index: -5;}
+
+  .tv-guide-container {filter: saturate(0)}
+
+  .tv-view {background-color: white;z-index: 150;position: relative;}
+
+
   /*-------------------------------------Tabs--------------------------------------------------*/
 
 
   /*---------------------------------------Channels-------------------------------------------*/
-  .channel-logo {float: left;width: 51px;height: 59.88px;position:static;margin-left: 10px;}
+  .channel-logo {float: left;width: 51px;height: 59.88px;position:static;margin-left: 10px;background-color: white;}
 
   .item-wrapper {margin: auto;width: 150px;}
 
-.text-container {float: left;margin-top: -5px;margin-left: 15px;;}
+.text-container {float: left;margin-top: -5px;margin-left: 15px;background-color: white;position: relative;z-index: 150;width: 100%;}
 
 .text-container > h5 {font-weight: bold;font-size: 19px;text-align: left;}
 
@@ -108,7 +116,7 @@ body.darkclass .tabs .indicator {
 
 .plus-text {margin-top: 20px;;}
 
-
+.plus-text {width: 230px;padding-left: 5px; margin-left: 6px;}
 .col {margin-top: 5px;;margin: auto; width: 95%;}
 
 

@@ -267,7 +267,7 @@
     <div class="sticky-container" id="up">
       <div id="playbackindicator" class="playing" >
         <div id="{{location}}">
-          <div style="pointer-events: none;"  class="filterdiv " >
+          <div style="pointer-events: none;"  class="filterdiv tv-view" >
               <button class="channel-button " style="border: none;box-shadow:none;margin-top:0px;;">
                 <img id="channellogo" class="channel-logo plus" src="/ChannelLogos/abc.svg">
          <div class="channel">
@@ -277,11 +277,15 @@
            <p>Now Playing</p>
           </div>
       
-          <p class="playing-indicator">Now Playing | Live</p>
+    
            </div>
+          
          </button>
         
             </div>
+            <div class="tv-guide-container"> <iframe class="tv-guide" src="https://streamingtvguides.com/Channel/AETV">
+            </iframe></div>
+           
             <div class="stream-list">
               <button class="waves-effect" onclick="document.getElementById('playback').src='https://projectFlux.netlify.com/{{viewer}}'">Stream 1</button>
               <button class="waves-effect" onclick="document.getElementById('playback').src='https://projectFlux.netlify.com/2{{viewer}}'">Stream 2</button>
