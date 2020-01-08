@@ -54,7 +54,7 @@
 
      
   
-        <button class="channel-button waves-effect" onclick="document.getElementById('channeltxt').innerHTML = '{{name}}';document.getElementById('channellogo').src = 'ChannelLogos/{{logo}}';document.getElementById('playback'). src ='https://projectFlux.netlify.com/{{viewer}}';">
+        <button class="channel-button" onclick="document.getElementById('channeltxt').innerHTML = '{{name}}';document.getElementById('channellogo').src = 'ChannelLogos/{{logo}}';document.getElementById('playback'). src ='https://projectFlux.netlify.com/{{viewer}}';">
           <img class="channel-logo" src="/ChannelLogos/{{logo}}">
    <div class="channel">
     
@@ -64,7 +64,11 @@
     </div>
   
      </div>
-     <iframe src="{{channelUrl}}"></iframe>
+     <div class="tab-pane" id="preview_site">
+      <div class="preview_wrap">
+          <iframe style="border-radius: 50px;" loading="lazy" id="site_previewer" class="frame_wrap" src="{{channelUrl}}" ></iframe>
+      </div>
+  </div>
    </button>
  
       {{/each}}
