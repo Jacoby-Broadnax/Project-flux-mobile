@@ -84,7 +84,7 @@
   </script>
 
   <script id="item-template2" type="text/x-handlebars-template">
-
+<div class="loading-spacer "></div>
     {{#each this}}
   
     <a class="filterdiv {{location}}" href="#{{location}}">
@@ -235,7 +235,29 @@
   </script>
 </head>
 
-<body class="vivify fadeIn delay-1000">
+<body class="vivify fadeIn delay-1000" onload="loaded()">
+<div class="loader" id="loader">
+  <div class="sub-loader">
+  <div class="preloader-wrapper small active">
+    <div class="spinner-layer spinner-green-only">
+      <div class="circle-clipper left">
+        <div class="circle"></div>
+      </div><div class="gap-patch">
+        <div class="circle"></div>
+      </div><div class="circle-clipper right">
+        <div class="circle"></div>
+      </div>
+    </div>
+  </div>
+  </div>
+</div>
+
+<script>
+function loaded(){
+  document.getElementById('loader').style.display = "none"
+}
+</script>
+
   <div class="nav">
     <div class="logo-container">
       <div><img src="/Branding/tvflux logo app.svg"></div>
