@@ -32,10 +32,8 @@
   <script type="module" src="https://unpkg.com/x-frame-bypass"></script>
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.12/handlebars.min.js">
   </script>
-  <link href="https://vjs.zencdn.net/7.2.3/video-js.css" rel="stylesheet">
-  <script src="https://vjs.zencdn.net/ie8/ie8-version/videojs-ie8.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/videojs-contrib-hls/5.14.1/videojs-contrib-hls.js"></script>
-  <script src="https://vjs.zencdn.net/7.2.3/video.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <link rel="manifest" href="manifest.json">
 
   <script type="text/javascript">
@@ -54,7 +52,7 @@
 
      
   
-        <button class="channel-button" onclick="document.getElementById('channeltxt').innerHTML = '{{name}}';document.getElementById('channellogo').src = 'ChannelLogos/{{logo}}';document.getElementById('playback'). src ='https://projectFlux.netlify.com/{{viewer}}';">
+        <button  data-aos="fade-up" class="channel-button" onclick="document.getElementById('channeltxt').innerHTML = '{{name}}';document.getElementById('channellogo').src = 'ChannelLogos/{{logo}}';document.getElementById('playback'). src ='https://projectFlux.netlify.com/{{viewer}}';">
           <img class="channel-logo" src="/ChannelLogos/{{logo}}">
    <div class="channel">
     
@@ -74,165 +72,7 @@
       {{/each}}
       
   </script>
-  <script type="text/javascript">
-    $(document).ready(function () {
-      $.getJSON('https://v2-api.sheety.co/1c0174d5b32dbebdf6f1e14d6ba67a4f/projectFlux/sports', function (data) {
-        var template = Handlebars.compile($('#item-template2').html())
-        $('#items2').html(template(data.sports))
-      })
-    })
-  </script>
 
-  <script id="item-template2" type="text/x-handlebars-template">
-<div class="loading-spacer "></div>
-    {{#each this}}
-  
-    <a class="filterdiv {{location}}" href="#{{location}}">
-        <button class="channel-button waves-effect" onclick="document.getElementById('channeltxt').innerHTML = '{{name}}';document.getElementById('channellogo').src = 'ChannelLogos/{{logo}}';document.getElementById('playback'). src ='https://projectFlux.netlify.com/{{viewer}}';">
-          <img class="channel-logo" src="/ChannelLogos/{{logo}}">
-   <div class="channel">
-    
-     <div class="text-container">
-     <h5>{{name}}</h5>
-     <p>{{status}}</p>
-    </div>
-     </div>
-   </button>
-   </a>
-
-         </div>
-       </button>
-       </a>
-      {{/each}}
-      
-  </script>
-  <script type="text/javascript">
-    $(document).ready(function () {
-      $.getJSON('https://v2-api.sheety.co/1c0174d5b32dbebdf6f1e14d6ba67a4f/projectFlux/news', function (data) {
-        var template = Handlebars.compile($('#item-template3').html())
-        $('#items3').html(template(data.news))
-      })
-    })
-  </script>
-
-  <script id="item-template3" type="text/x-handlebars-template">
-
-    {{#each this}}
-  
-
-          <a class="filterdiv {{location}} vivify fadeInBottom duration-500" href="#{{location}}">
-            <button class="channel-button waves-effect" onclick="document.getElementById('channeltxt').innerHTML = '{{name}}';document.getElementById('channellogo').src = 'ChannelLogos/{{logo}}';document.getElementById('playback'). src ='https://projectFlux.netlify.com/{{viewer}}';">
-              <img class="channel-logo" src="/ChannelLogos/{{logo}}">
-       <div class="channel"> 
-         <div class="text-container">
-         <h5>{{name}}</h5>
-         <p>{{status}}</p>
-        </div>
-         </div>
-       </button>
-       </a>
-      {{/each}}
-      
-  </script>
-
-  <script type="text/javascript">
-    $(document).ready(function () {
-      $.getJSON('https://v2-api.sheety.co/1c0174d5b32dbebdf6f1e14d6ba67a4f/projectFlux/reality', function (data) {
-        var template = Handlebars.compile($('#item-template6').html())
-        $('#items6').html(template(data.reality))
-      })
-    })
-  </script>
-
-  <script id="item-template6" type="text/x-handlebars-template">
-
-    {{#each this}}
-  
-
-          <a class="filterdiv {{location}} vivify fadeInBottom duration-500" href="#{{location}}">
-            <button class="channel-button waves-effect" onclick="document.getElementById('channeltxt').innerHTML = '{{name}}';document.getElementById('channellogo').src = 'ChannelLogos/{{logo}}';document.getElementById('playback'). src ='https://projectFlux.netlify.com/{{viewer}}';">
-              <img class="channel-logo" src="/ChannelLogos/{{logo}}">
-       <div class="channel">
-        
-         <div class="text-container">
-         <h5>{{name}}</h5>
-         <p>{{status}}</p>
-        </div>
-         </div>
-       </button>
-       </a>
-      {{/each}}
-      
-  </script>
-  <script type="text/javascript">
-    $(document).ready(function () {
-      $.getJSON('https://v2-api.sheety.co/1c0174d5b32dbebdf6f1e14d6ba67a4f/projectFlux/kids', function (data) {
-        var template = Handlebars.compile($('#item-template4').html())
-        $('#items4').html(template(data.kids))
-      })
-    })
-  </script>
-
-  <script id="item-template4" type="text/x-handlebars-template">
-
-    {{#each this}}
-  
-
-   
-    <a class="filterdiv {{location}}" href="#{{location}}">
-        <button class="channel-button waves-effect" onclick="document.getElementById('channeltxt').innerHTML = '{{name}}';document.getElementById('channellogo').src = 'ChannelLogos/{{logo}}';document.getElementById('playback'). src ='https://projectFlux.netlify.com/{{viewer}}';">
-          <img class="channel-logo" src="/ChannelLogos/{{logo}}">
-   <div class="channel">
-    
-     <div class="text-container">
-     <h5>{{name}}</h5>
-     <p>{{status}}</p>
-    </div>
-     </div>
-   </button>
-   </a>
-   {{/each}} 
-  </script>
-  <script type="text/javascript">
-    $(document).ready(function () {
-      $.getJSON('https://v2-api.sheety.co/1c0174d5b32dbebdf6f1e14d6ba67a4f/projectFlux/all', function (data) {
-        var template = Handlebars.compile($('#item-template5').html())
-        $('#preview').html(template(data.all))
-      })
-    })
-  </script>
-
-  <script id="item-template5" type="text/x-handlebars-template">
-
-    {{#each this}}
-    <style>
-        #{{location}}{display:none}
-          #{{location}}:target {display: block !important;}
-          </style>
-<div id="{{location}}">
-    <div style="pointer-events: none;"  class="filterdiv " >
-        <button class="channel-button ">
-          <img class="channel-logo plus" src="/ChannelLogos/{{logo}}">
-   <div class="channel">
-      
-     <div class="text-container plus-text">
-     <h5>{{name}}</h5>
-     <p>Now Playing</p>
-    </div>
-
-    <p class="playing-indicator">Now Playing | Live</p>
-     </div>
-   </button>
-  
-      </div>
-      <div class="stream-list">
-        <button class="waves-effect" onclick="document.getElementById('playback').src='https://projectFlux.netlify.com/{{viewer}}'">Stream 1</button>
-        <button class="waves-effect" onclick="document.getElementById('playback').src='https://projectFlux.netlify.com/2{{viewer}}'">Stream 2</button>
-           </div>
-          </div>
-      {{/each}}
-   
-  </script>
 </head>
 
 <body class="vivify fadeIn delay-1000" onload="loaded()">
@@ -300,7 +140,7 @@ function loaded(){
                 <img id="channellogo" class="channel-logo plus" src="/ChannelLogos/abc.svg">
          <div class="channel">
             
-           <div class="text-container plus-text">
+           <div class="text-container plus-text waves-effect">
            <h5 id="channeltxt">ABC</h5>
            <p>Now Playing</p>
           </div>
@@ -311,22 +151,8 @@ function loaded(){
          </button>
         
             </div>
-            <div class="tv-guide-container"> <iframe class="tv-guide" src="https://streamingtvguides.com/Channel/AETV">
-            </iframe></div>
-           
-            <div class="stream-list">
-              <button class="waves-effect" onclick="document.getElementById('playback').src='https://projectFlux.netlify.com/{{viewer}}'">Stream 1</button>
-              <button class="waves-effect" onclick="document.getElementById('playback').src='https://projectFlux.netlify.com/2{{viewer}}'">Stream 2</button>
-                 </div>
-                </div>
+        </div>    
       </div>
-      <ul class="tabs">
-        <li class="tab col s3 "><a href="#all">All</a></li>
-        <li class="tab col s3 "><a href="#sports">Sports</a></li>
-        <li class="tab col s3"><a href="#news">News</a></li>
-        <li class="tab col s3"><a href="#kids">Kids</a></li>
-        <li class="tab col s3"><a href="#reality">Reality</a></li>
-      </ul>
     </div>
 
     <div id="all" class="col ">
@@ -345,20 +171,7 @@ function loaded(){
    
     </div>
 
-    <div id="sports" >
-      <div id="items2" class="item-wrapper"></div>
-    </div>
-
-    <div id="news" class="col ">
-      <div id="items3"></div>
-    </div>
-    <div id="kids" class="col ">
-      <div id="items4"></div>
-    </div>
-
-    <div id="reality" class="col ">
-      <div id="items6"></div>
-    </div>
+  
 
     <script>
       $(window).scroll(function () {
@@ -382,7 +195,9 @@ $("a:link").on("click", function(e){
 });
 </script>
 
-
+<script>
+  AOS.init();
+</script>
 
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
     <ins class="adsbygoogle" style="display:block" data-ad-format="fluid" data-ad-layout-key="-fb+5w+4e-db+86"
