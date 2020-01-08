@@ -364,23 +364,14 @@ function loaded(){
       $(window).scroll(function () {
         var scroll = $(window).scrollTop();
         if (scroll > 0) {
-          $("#playback").addClass("scrolled");
+          $("#back").addClass("top");
         } else {
-          $("#playback").removeClass("scrolled");
+          $("#back").removeClass("top");
         }
       });
     </script>
 
-    <script>
-      $(window).scroll(function () {
-        var scroll = $(window).scrollTop();
-        if (scroll > 225) {
-          $("#notice").addClass("open");
-        } else {
-          $("#notice").removeClass("open");
-        }
-      });
-    </script>
+
 <script>
 $("a:link").on("click", function(e){
     if($(this).attr("href").match("^#")) {
@@ -390,16 +381,7 @@ $("a:link").on("click", function(e){
     }
 });
 </script>
-<script>
-  $(window).scroll(function () {
-    var scroll = $(window).scrollTop();
-    if (scroll > 0) {
-      $("#playbackindicator").addClass("on");
-    } else {
-      $("#playbackindicator").removeClass("on");
-    }
-  });
-</script>
+
 
 
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
