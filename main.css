@@ -52,9 +52,9 @@ body.darkclass .tabs .indicator {
 
   /*-------------------------------------Play Back Container------------------------------------------*/
 
-#playback {width: 106%; border: none;height: 220px;left: 0px; z-index: 501; z-index: 501;;margin-top: 5px;transition: 0.15s ease;position: fixed; top: 49px;z-index: 800;left: 0px;background-color: white;}
+#playback {width: 100%; border: none;height: 220px;left: 0px; z-index: 501; z-index: 501;;margin-top: 5px;transition: 0.15s ease;position: fixed; top: 49px;z-index: 800;left: 0px;background-color: white;}
 
-  #playback.scrolled {width: 50px;position: fixed; bottom: -20px;height: 130px;width:177.57px;left:5%;margin-top: 0px;;padding-bottom: 10px; background-color: white;padding-top: 10px;top: 50px;}
+  #playback.scrolled {width: 50px;position: fixed; bottom: -20px;height: 130px;width:177.57px;left:5%;margin-top: 0px;; background-color: white;padding-top: 10px;top: 50px;}
 
   .playback-container {width: 100%;}
 
@@ -140,7 +140,7 @@ border-radius: 7px;
 
 .text-container > p {margin-top: -8px;margin-left: 2px;;text-align: left;font-size: 12px;;}
 
-.channel-button {border: none; background-color: transparent;padding-top: 0px;width: 100%;border-radius: 8px;border: solid 1px lightgray;height: 60px;margin-top: 10px;}
+.channel-button {border: none; background-color: transparent;padding-top: 0px;width: 100%;border-radius: 8px;height: 60px;margin-top: 10px;}
 
 .line-up {background-color: white;border-radius: 50px;border: solid 1px lightgray;position: relative;z-index: 150;height: 30px;margin-top: -45px;float: right;margin-right: 15px;}
 
