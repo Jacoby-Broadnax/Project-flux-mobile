@@ -154,13 +154,13 @@ border-radius: 7px;
 
 .preview-item{display: none;}
 
-.plus{padding:15px 15px 15px 15px; width: 90px; height: 90px;border-radius: 10px;;margin-top:10px;;position:relative;z-index: 5;color: white;}
+.plus{padding:0; width: 90px; height: 62.5px;border-radius: 10px;;margin-top:24px;;position:relative;z-index: 5;color: white;background-color: white;border-radius: 10px 0px 0px 10px;display: none;}
 
 .playing-indicator {position: absolute; right: 20px;;border: solid 1px lightgray;padding: 5px 10px 5px 10px;border-radius: 50px;margin-top: 33px;;display: none;;}
 
-.plus-text {margin-top: 20px;;}
+.plus-text {margin-top: 20px;;color: black;}
 
-.plus-text {padding-left: 0px; margin-left: 0px;color: white;padding-left: 7px;padding-right: 7px;background-color: rgba(0, 0, 0, 0.247);border-radius: 6px;margin-top: 24px;}
+.plus-text {padding-left: 15px; margin-left: 0px;margin-left: px;padding-right: 15px;background-color: white;margin-top: 24px;color: black;position: fixed; left: 12px;width: auto;top: 45px;}
 .col {margin-top: 5px;;margin: auto; width: 95%;}
 
 
