@@ -6,12 +6,12 @@
   </defs>
   <g id="Home" clip-path="url(#clip-Home)">
     <rect width="55" height="55" fill="#fff"/>
-    <text id="Live_Tv" data-name="Live Tv" transform="translate(8 33)" font-size="12" font-family="SegoeUI, Segoe UI"><tspan x="2.349" y="13">Live Tv</tspan></text>
-    <g id="live_tv-24px" transform="translate(16 8)">
+    <path id="Path_16" data-name="Path 16" d="M7.81,13H3.45V4.6h.984v7.512H7.81ZM9.462,5.477A.609.609,0,0,1,9.022,5.3a.593.593,0,0,1-.182-.445.615.615,0,0,1,.621-.627.621.621,0,0,1,.448.179.626.626,0,0,1,0,.888A.615.615,0,0,1,9.462,5.477ZM9.931,13H8.97V7h.961Zm6.662-6L14.2,13h-.943L10.985,7H12.04l1.523,4.359a3.913,3.913,0,0,1,.211.838H13.8a3.962,3.962,0,0,1,.188-.814L15.579,7Zm5.854,3.24H18.21a2.244,2.244,0,0,0,.539,1.547,1.858,1.858,0,0,0,1.418.545,2.948,2.948,0,0,0,1.863-.668v.9a3.482,3.482,0,0,1-2.092.574,2.536,2.536,0,0,1-2-.817,3.346,3.346,0,0,1-.727-2.3,3.281,3.281,0,0,1,.794-2.282,2.546,2.546,0,0,1,1.972-.882,2.256,2.256,0,0,1,1.822.762,3.176,3.176,0,0,1,.645,2.115Zm-.984-.814a1.955,1.955,0,0,0-.4-1.295,1.368,1.368,0,0,0-1.1-.463,1.552,1.552,0,0,0-1.154.486,2.207,2.207,0,0,0-.586,1.271ZM32.284,5.488H29.858V13h-.984V5.488h-2.42V4.6h5.83ZM37.593,7,35.2,13h-.943L31.985,7H33.04l1.523,4.359a3.913,3.913,0,0,1,.211.838H34.8a3.962,3.962,0,0,1,.188-.814L36.579,7Z" transform="translate(8 33)"/>
+    <g id="live_tv-24px" transform="translate(17 8)">
       <path id="Path_13" data-name="Path 13" d="M0,0H24V24H0Z" fill="none"/>
       <path id="Path_14" data-name="Path 14" d="M21,6H13.41L16.7,2.71,16,2,12,6,8,2l-.71.71L10.59,6H3A2,2,0,0,0,1,8V20a2.006,2.006,0,0,0,2,2H21a2.006,2.006,0,0,0,2-2V8A2,2,0,0,0,21,6Zm0,14H3V8H21ZM9,10v8l7-4Z"/>
     </g>
-    <rect id="Rectangle_21" data-name="Rectangle 21" width="20" height="14" transform="translate(18 15)"/>
-    <path id="Polygon_1" data-name="Polygon 1" d="M4,0,8,7H0Z" transform="translate(32.5 18.5) rotate(90)" fill="#fff"/>
+    <rect id="Rectangle_21" data-name="Rectangle 21" width="20" height="14" transform="translate(19 15)"/>
+    <path id="Polygon_1" data-name="Polygon 1" d="M4,0,8,7H0Z" transform="translate(33.5 18.5) rotate(90)" fill="#fff"/>
   </g>
 </svg>
