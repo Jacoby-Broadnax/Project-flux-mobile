@@ -104,7 +104,7 @@
 
     {{#each this}}
   
-    <button ondblclick = "localStorage.setItem('fav{{id}}', 'null');window.navigator.vibrate(50);" id="au{{id}}" onclick="document.getElementById('channeltxt').innerHTML = '{{name}}';document.getElementById('channellogo').src='ChannelLogos/{{logo}}';document.getElementById('playback'). src ='https://projectFlux.netlify.com/{{viewer}}';" class="waves-effect favorite-icon" >
+    <button ondblclick = "localStorage.setItem('fav{{id}}', 'null');window.navigator.vibrate(50);document.getElementById('fav{{id}}').style.display = 'none'" id="au{{id}}" onclick="document.getElementById('channeltxt').innerHTML = '{{name}}';document.getElementById('channellogo').src='ChannelLogos/{{logo}}';document.getElementById('playback'). src ='https://projectFlux.netlify.com/{{viewer}}';" class="waves-effect favorite-icon" >
       <img  src="/ChannelLogos/{{logo}}">
     </button>
      
