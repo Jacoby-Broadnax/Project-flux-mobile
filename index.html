@@ -4,6 +4,8 @@
 <head>
   <meta name="trafficjunky-site-verification" content="uvasn3o00" />
   <link rel="stylesheet" href="vivify.min.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
   <title>Project | FLUX</title>
   <!-- Compiled and minified CSS -->
   <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
@@ -72,11 +74,18 @@
      display:none;
    }
    </style>
+<div class="favorite-go">
+  <button class="waves-effect" onclick="document.getElementById('ju{{id}}').innerHTML = 'favorite'">
+    <i id="ju{{id}}" class="material-icons">favorite_border</i>
+  </button>
+
+</div>
+   <!---
   <button onclick="document.getElementById('j{{id}}').src='{{channelUrl}}';document.getElementById('s{{id}}').style.display='block'" class="line-up waves-effect">Whats Playing?</button>
    <div class="tab-pane " id="{{location}}">
     <div id="s{{id}}" class="preview_wrap vivify fadeInLeft">
         <iframe scrolling="no" loading="lazy" id="j{{id}}" class="frame_wrap" src="" ></iframe>
-    </div>
+    </div>--->
 </div>
       {{/each}}
       

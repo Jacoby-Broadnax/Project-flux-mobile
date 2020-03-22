@@ -232,3 +232,8 @@ label>img:active {}
 .favorite-overflow > button > img {object-fit: scale-down;height: 40px;width: 100%;}
 
 .favorite-overflow > button:first-of-type {margin-left: 8px;}
+
+.favorite-go {float: right;margin-top: -40px;}
+
+.favorite-go > button {border: none;background-color: white;}
+
