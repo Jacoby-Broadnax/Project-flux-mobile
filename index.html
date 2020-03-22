@@ -91,6 +91,8 @@
       
   </script>
 
+
+
   <script type="text/javascript">
     $(document).ready(function () {
       $.getJSON('https://v2-api.sheety.co/1c0174d5b32dbebdf6f1e14d6ba67a4f/projectFlux/all', function (data) {
@@ -111,7 +113,23 @@
       {{/each}}
       
   </script>
+  <script type="text/javascript">
+    $(document).ready(function () {
+      $.getJSON('https://v2-api.sheety.co/1c0174d5b32dbebdf6f1e14d6ba67a4f/projectFlux/all', function (data) {
+        var template = Handlebars.compile($('#item-template7').html())
+        $('#items5').html(template(data.all))
+      })
+    })
+  </script>
 
+  <script id="item-template7" type="text/x-handlebars-template">
+
+    {{#each this}}
+  <iframe loading = "lazy" src="https://projectFlux.netlify.com/{{viewer}}"></iframe>
+
+      {{/each}}
+      
+  </script>
 </head>
 
 <body class="vivify fadeIn delay-1000" onload="loaded()">
@@ -155,7 +173,7 @@ function loaded(){
 
     </div>
 
-
+<div id="items5" style="margin-top: 150px;"><h1>loading...</h1></div>
 <div class="favorite" id="fvt">
   <h3>Favorites</h3>
   <div class="favorite-overflow" id="items2">
