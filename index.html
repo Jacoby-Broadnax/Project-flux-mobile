@@ -58,7 +58,7 @@
      
   
         <button  data-aos="fade-in" class="channel-button waves-effect" onclick="document.getElementById('channeltxt').innerHTML = '{{name}}';document.getElementById('channellogo').src='ChannelLogos/{{logo}}';document.getElementById('playback'). src ='https://projectFlux.netlify.com/{{viewer}}';">
-          <img class="channel-logo" src="/ChannelLogos/{{logo}}">
+          <img onload="document.getElementById('au{{id}}').classList.add(localStorage.getItem('fav{{id}}'));" class="channel-logo" src="/ChannelLogos/{{logo}}">
    <div class="channel">
     
      <div class="text-container">
@@ -75,7 +75,7 @@
    }
    </style>
 <div class="favorite-go">
-  <button class="waves-effect" onclick="document.getElementById('ju{{id}}').innerHTML = 'favorite'">
+  <button class="waves-effect" onclick="document.getElementById('ju{{id}}').innerHTML = 'favorite';localStorage.setItem('fav{{id}}', 'favorited');">
     <i id="ju{{id}}" class="material-icons">favorite_border</i>
   </button>
 
@@ -104,8 +104,8 @@
 
     {{#each this}}
   
-    <button onclick="document.getElementById('channeltxt').innerHTML = '{{name}}';document.getElementById('channellogo').src='ChannelLogos/{{logo}}';document.getElementById('playback'). src ='https://projectFlux.netlify.com/{{viewer}}';" class="waves-effect" id="au{{id}}">
-      <img src="/ChannelLogos/{{logo}}">
+    <button id="au{{id}}" onclick="document.getElementById('channeltxt').innerHTML = '{{name}}';document.getElementById('channellogo').src='ChannelLogos/{{logo}}';document.getElementById('playback'). src ='https://projectFlux.netlify.com/{{viewer}}';" class="waves-effect favorite-icon" >
+      <img  src="/ChannelLogos/{{logo}}">
     </button>
      
       {{/each}}
