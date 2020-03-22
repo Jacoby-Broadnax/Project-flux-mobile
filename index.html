@@ -95,7 +95,7 @@
 
     {{#each this}}
   
-    <button class="waves-effect" id="au{{id}}">
+    <button onclick="document.getElementById('channeltxt').innerHTML = '{{name}}';document.getElementById('channellogo').src='ChannelLogos/{{logo}}';document.getElementById('playback'). src ='https://projectFlux.netlify.com/{{viewer}}';" class="waves-effect" id="au{{id}}">
       <img src="/ChannelLogos/{{logo}}">
     </button>
      
