@@ -75,7 +75,7 @@
    }
    </style>
 <div class="favorite-go">
-  <button class="waves-effect" onclick="document.getElementById('ju{{id}}').innerHTML = 'favorite';localStorage.setItem('fav{{id}}', 'favorited');">
+  <button class="waves-effect" onclick="document.getElementById('au{{id}}').style.display = 'inline-block';document.getElementById('ju{{id}}').innerHTML = 'favorite';localStorage.setItem('fav{{id}}', 'favorite');">
     <i id="ju{{id}}" class="material-icons">favorite_border</i>
   </button>
 
@@ -107,7 +107,7 @@
     {{#each this}}
   
     <button id="au{{id}}" ondblclick = "localStorage.setItem('fav{{id}}', 'null');window.navigator.vibrate(50);document.getElementById('au{{id}}').style.display = 'none';"  onclick="document.getElementById('channeltxt').innerHTML = '{{name}}';document.getElementById('channellogo').src='ChannelLogos/{{logo}}';document.getElementById('playback'). src ='https://projectFlux.netlify.com/{{viewer}}';" class="waves-effect favorite-icon" >
-      <img onload="document.getElementById('au{{id}}').classList.add(localStorage.getItem('fav{{id}}'));" src="/ChannelLogos/{{logo}}">
+      <img onload="document.getElementById('ju{{id}}').innerHTML = 'favorite_outline';document.getElementById('au{{id}}').classList.add(localStorage.getItem('fav{{id}}'));document.getElementById('ju{{id}}').innerHTML = localStorage.getItem('fav{{id}}');" src="/ChannelLogos/{{logo}}">
     </button>
      
       {{/each}}
@@ -174,7 +174,7 @@ function loaded(){
     </div>
 
 
-<div class="favorite" id="fvt">
+<div class="favoritexm" id="fvt">
   <h3>Favorites</h3>
   <div class="favorite-overflow" id="items2">
    

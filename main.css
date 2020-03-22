@@ -221,9 +221,9 @@ label>img:active {}
 
 /*---------------------------------Favorites-------------------------------------*/
 
-.favorite {margin-top: 265px;}
+.favoritexm {margin-top: 265px;}
 
-.favorite > h3 {font-size: 19px; font-weight: bold;margin-left: 8px;margin-top: 50px;}
+.favoritexm > h3 {font-size: 19px; font-weight: bold;margin-left: 8px;margin-top: 50px;}
 
 .favorite-overflow {overflow: scroll; height: 95px;white-space: nowrap;margin-top: 0px;}
 
@@ -239,7 +239,7 @@ label>img:active {}
 
 .favorite-icon {display: none;}
 
-.favorited {display: inline-block;}
+.favorite {display: inline-block}
 
 .null {display: none;}
 
