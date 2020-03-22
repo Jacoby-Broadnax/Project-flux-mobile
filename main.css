@@ -227,10 +227,7 @@ label>img:active {}
 
 .favorite-overflow {overflow: scroll; height: 95px;white-space: nowrap;margin-top: 0px;}
 
-.favorite-overflow::-webkit-scrollbar {
-  width: 0px;  /* Remove scrollbar space */
-  background: transparent;  /* Optional: just make scrollbar invisible */
-}
+
 
 .favorite-icon {width: 95px; height: 95px;background-color: white; border: solid 1px lightgray;display: inline-block;margin-left: 4px;border-radius: 6px;}
 
