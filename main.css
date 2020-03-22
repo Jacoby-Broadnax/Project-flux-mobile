@@ -229,4 +229,6 @@ label>img:active {}
 
 .favorite-overflow > button {width: 95px; height: 95px;background-color: white; border: solid 1px lightgray;display: inline-block;margin-left: 4px;border-radius: 6px;}
 
+.favorite-overflow > button > img {object-fit: scale-down;height: 40px;width: 100%;}
+
 .favorite-overflow > button:first-of-type {margin-left: 8px;}

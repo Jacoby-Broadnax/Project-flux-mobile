@@ -82,6 +82,27 @@
       
   </script>
 
+  <script type="text/javascript">
+    $(document).ready(function () {
+      $.getJSON('https://v2-api.sheety.co/1c0174d5b32dbebdf6f1e14d6ba67a4f/projectFlux/all', function (data) {
+        var template = Handlebars.compile($('#item-template2').html())
+        $('#items2').html(template(data.all))
+      })
+    })
+  </script>
+
+  <script id="item-template2" type="text/x-handlebars-template">
+
+    {{#each this}}
+  
+    <button class="waves-effect" id="au{{id}}">
+      <img src="/ChannelLogos/{{logo}}">
+    </button>
+     
+      {{/each}}
+      
+  </script>
+
 </head>
 
 <body class="vivify fadeIn delay-1000" onload="loaded()">
@@ -128,19 +149,9 @@ function loaded(){
 
 <div class="favorite" id="fvt">
   <h3>Favorites</h3>
-  <div class="favorite-overflow">
-    <button class="waves-effect">
-      <img src="/ChannelLogos/abc.svg">
-    </button>
-    <button class="waves-effect">
-      <img src="/ChannelLogos/abc.svg">
-    </button>
-    <button class="waves-effect">
-      <img src="/ChannelLogos/abc.svg">
-    </button>
-    <button class="waves-effect">
-      <img src="/ChannelLogos/abc.svg">
-    </button>
+  <div class="favorite-overflow" id="items2">
+   
+  
  
   </div>
 
