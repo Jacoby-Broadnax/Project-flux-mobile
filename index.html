@@ -290,7 +290,16 @@ function loaded(){
 
       </div>
   </div>
-
+  <script>
+    $(window).scroll(function () {
+      var scroll = $(window).scrollTop();
+      if (scroll > 0) {
+        $("#playback").addClass("scrolled");
+      } else {
+        $("#playback").removeClass("scrolled");
+      }
+    });
+  </script>
     <script>
       $(window).scroll(function () {
         var scroll = $(window).scrollTop();
