@@ -77,7 +77,7 @@
    }
    </style>
 <div class="favorite-go">
-  <button id="ju{{id}}" class="waves-effect" onclick=";document.getElementById('au{{id}}').style.display = 'inline-block';localStorage.setItem('fav{{id}}', 'favorite');M.toast({html: 'Added to favorites'})">
+  <button id="ju{{id}}" class="waves-effect" onclick=";document.getElementById('au{{id}}').style.display = 'inline-block';localStorage.setItem('fav{{id}}', 'favorite');M.toast({html: '{{name}} Added to favorites'})">
     Add To Favorites
   
   </button>
@@ -109,7 +109,7 @@
 
     {{#each this}}
   
-    <button id="au{{id}}" ondblclick = "localStorage.setItem('fav{{id}}', 'null');window.navigator.vibrate(50);document.getElementById('au{{id}}').style.display = 'none';M.toast({html: 'Removed From Favorites'})"  
+    <button id="au{{id}}" ondblclick = "localStorage.setItem('fav{{id}}', 'null');window.navigator.vibrate(50);document.getElementById('au{{id}}').style.display = 'none';M.toast({html: '{{name}} Removed From Favorites'})"  
     
     onclick="document.getElementById('channeltxt').innerHTML = '{{name}}';document.getElementById('channellogo').src='ChannelLogos/{{logo}}';document.getElementById('playback'). src ='https://projectFlux.netlify.com/{{viewer}}';" class="waves-effect favorite-icon" >
       <img onload="document.getElementById('au{{id}}').classList.add(localStorage.getItem('fav{{id}}'));" src="/ChannelLogos/{{logo}}">
