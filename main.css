@@ -147,6 +147,9 @@ border-radius: 7px;
 
   .guide-sect {filter:brightness(1.5);width: 100%;}
 
+  summary > .channel-button > .channel > .text-container > p {padding-top: 5px;padding-left: 0px;margin-left: -1px;}
+
+  summary > .channel-button  {margin-left: 15px;}
   /*---------------------------------------Channels-------------------------------------------*/
   .channel-logo {float: left;width: 51px;height: 59.88px;position:static;margin-left: 10px;background-color: transparent;object-fit: scale-down;height: 60px;}
 
