@@ -152,6 +152,14 @@ border-radius: 7px;
   summary > .channel-button  {margin-left: 15px;}
 
   #tabs-swipe {position: fixed;top:320px; left:0px; z-index:1000;width: 100%;}
+
+  #tabs-swipe > li {width: 50%;padding: 0px;}
+
+  #tabs-swipe > li > a {padding: 0px;}
+
+  .indicator {width: 50%;}
+
+  
   /*---------------------------------------Channels-------------------------------------------*/
   .channel-logo {float: left;width: 51px;height: 59.88px;position:static;margin-left: 10px;background-color: transparent;object-fit: scale-down;height: 60px;}
 
