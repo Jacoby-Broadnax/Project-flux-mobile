@@ -164,6 +164,8 @@ function loaded(){
     <div class="logo-container">
       <div><img src="/Branding/tvflux logo app.svg"></div>
     </div>
+
+    <button class="darkmode-open"><i class="material-icons">menu</i></button>
   </div>
 
 
@@ -178,7 +180,7 @@ function loaded(){
 
     </div>
 
-
+   
 <div class="favoritexm" id="fvt">
   <h3>Favorites</h3>
   <div class="favorite-overflow" id="items2">
@@ -240,7 +242,7 @@ function loaded(){
 
       </div>
       <div id="darkmode-sect" class="darkmode-sect">
-        <a href="#"><button class="darkmode-sect-close"></button></a>
+     <div class="darkmode-sect-close" onclick="document.getElementById('darkmode-sect').style.display = 'none'"></div>
         <div class="sub-dark">
          <h5>Dark Mode | Beta</h5>
          <p>This feature is in Beta take this into consideration when using this feature</p>
