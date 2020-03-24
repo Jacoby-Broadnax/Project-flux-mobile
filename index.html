@@ -246,7 +246,7 @@ function loaded(){
         <div class="sub-dark">
          <h5>Dark Mode | Beta</h5>
          <p>This feature is in Beta take this into consideration when using this feature</p>
-          <div><a onclick="launch_toast()" class="darkmode F btn darken-4 dark-btn">Enable</a></div>
+          <div><a onclick="launch_toast()" class="darkmode F btn darken-4 dark-btn ">Enable</a></div>
           <div><a class="normalmode F btn-flat">Disable</a></div>
          
         </div>
@@ -338,6 +338,12 @@ M.toast({html: toastHTML, displayLength: 10000, completeCallback: function(){ale
 <div class="bottom-menu">
   <details id="buA">
     <summary onclick="document.getElementById('bottomguide').src = guidevalue; ">
+      <div class="expand-btn">
+        <i class="material-icons">keyboard_arrow_up</i>
+      </div>
+      <div class="collapse-btn">
+        <i class="material-icons">keyboard_arrow_down</i>
+      </div>
 <div class="channel-button">  <img id="bottomlogo" class="channel-logo " src="/ChannelLogos/abc.svg">
   <div class="channel">
    
