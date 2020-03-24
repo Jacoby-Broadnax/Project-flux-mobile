@@ -417,3 +417,8 @@ body.darkclass .normalmode {color: white;border: solid 1px rgb(65, 65, 65) ;}
 body.darkclass #playback {background-color:black;}
 
 body.darkclass .bottom-menu > details {background-color: black;}
+
+body.darkclass .sub-dark > h5 {color: white;}
+
+
+body.darkclass .sub-dark > p {color: rgb(167, 167, 167);}
