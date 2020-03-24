@@ -135,7 +135,7 @@ border-radius: 7px;
 
   .bottom-menu > details[open] > summary {position: fixed;top: 265px;width: 100%;background-color: white;z-index: 150;}
 
-  .guide-sect > iframe {width: 100%;height: 150vh;position: fixed;top: -1050px;z-index: -1;left: 0px;}
+  .guide-sect > iframe {width: 100%;height: 1200px;position: fixed;top: -1020px;z-index: -1;left: 0px;filter: invert(1);border: none;}
 
   .guide-sect {filter:brightness(1.5);width: 100%;}
 
