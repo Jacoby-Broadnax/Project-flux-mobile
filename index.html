@@ -239,10 +239,18 @@ function loaded(){
         </div>
 
       </div>
-      <p style="margin-left: 10px;">Dark Mode</p>
-      <div><a onclick="launch_toast()" class="darkmode F btn blue darken-4">Enable</a></div>
-      <div><a class="normalmode F btn-flat">Disable</a></div>
-      <div class="card-divider" style="display: block; margin-top:10px; "></div>
+      <div id="darkmode-sect" class="darkmode-sect">
+        <a href="#"><button class="darkmode-sect-close"></button></a>
+        <div class="sub-dark">
+         <h5>Dark Mode | Beta</h5>
+         <p>This feature is in Beta take this into consideration when using this feature</p>
+          <div><a onclick="launch_toast()" class="darkmode F btn black darken-4">Enable</a></div>
+          <div><a class="normalmode F btn-flat">Disable</a></div>
+         
+        </div>
+     
+      </div>
+     
       <script>
           $(document).ready(function ($) {
               var mode = localStorage.getItem('mode');
@@ -257,7 +265,7 @@ function loaded(){
               $(".normalmode").click(function () {
                   $("body").removeClass("darkclass");
                   $("accent").removeClass("darkclass");
-                  localStorage.setItem('mode', null);
+                  localStorage.setItem('mode', 'fff');
               });
           });
       </script>
