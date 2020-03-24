@@ -375,7 +375,7 @@ label>img:active {}
 
 .sub-dark > div:first-of-type {margin-left: 10px;}
 
-.black {background-color: white !important;}
+.black {background-color: white !important;transition: 0.2s ease;}
 
 .darkmode-open {position: fixed; right: 10px; top: 10px; z-index: 550;background-color: white;border: none;}
 
@@ -413,3 +413,5 @@ body.darkclass .black {filter: invert(1);}
 body.darkclass .dark-btn {border:none; ;color:rgb(145, 145, 145)}
 
 body.darkclass .normalmode {color: white;border: solid 1px rgb(65, 65, 65) ;}
+
+body.darkclass #playback {background-color:black;}
