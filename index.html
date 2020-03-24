@@ -349,7 +349,22 @@ M.toast({html: toastHTML, displayLength: 10000, completeCallback: function(){ale
     </div></div>
     </summary>
 
+    <ul id="tabs-swipe" class="tabs" >
+      <li class="tab col s3"><a href="#swipe-1">Guide</a></li>
+      <li class="tab col s3"><a class="active" href="#swipe-2">Live Chat</a></li>
+  
+    </ul>
+    <div id="swipe-1" class="col s12 blue">First tab content</div>
+    <div id="swipe-2" class="col s12 red">Second tab content</div>
+    <div id="swipe-3" class="col s12 green">Third tab content</div>
 
+    <script>
+      $(document).ready(function(){
+    $('ul.tabs').tabs({
+      swipeable : true,
+    });
+  });
+    </script>
     <div class="guide-sect">
       <div class="guide-item">
 <iframe id="bottomguide" src="https://streamingtvguides.com/Channel/AETV"></iframe>

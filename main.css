@@ -150,6 +150,8 @@ border-radius: 7px;
   summary > .channel-button > .channel > .text-container > p {padding-top: 5px;padding-left: 0px;margin-left: -1px;}
 
   summary > .channel-button  {margin-left: 15px;}
+
+  #tabs-swipe {position: fixed;top:320px; left:0px; z-index:1000;width: 100%;}
   /*---------------------------------------Channels-------------------------------------------*/
   .channel-logo {float: left;width: 51px;height: 59.88px;position:static;margin-left: 10px;background-color: transparent;object-fit: scale-down;height: 60px;}
 
