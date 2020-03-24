@@ -139,7 +139,7 @@ border-radius: 7px;
 
  .bottom-menu > details[open] {position: fixed;top: 0px;;}
 
-  .guide-sect  {width: 100%;position: fixed;top: -100px;z-index: -1;left: 0px;border: none;}
+  .guide-sect  {width: 100%;position: fixed;top: -210px;z-index: -1;left: 0px;border: none;}
 
   .guide-item {margin: auto; width: 330px;}
 
