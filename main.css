@@ -424,3 +424,5 @@ body.darkclass .sub-dark > h5 {color: white;}
 body.darkclass .sub-dark > p {color: rgb(167, 167, 167);}
 
 body.darkclass .bottom-menu > details[open] > summary {background-color: black;}
+
+body.darkclass .guide-item {filter:invert(1);}
