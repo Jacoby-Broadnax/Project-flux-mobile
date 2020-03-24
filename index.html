@@ -59,9 +59,9 @@
 
      
   
-        <button  data-aos="fade-in" class="channel-button waves-effect" onclick="document.getElementById('channeltxt').innerHTML = '{{name}}';document.getElementById('channellogo').src='ChannelLogos/{{logo}}';document.getElementById('playback'). src ='https://projectFlux.netlify.com/{{viewer}}';">
-          <img  class="channel-logo" src="/ChannelLogos/{{logo}}">
-   <div class="channel">
+        <button  data-aos="fade-in" class="channel-button waves-effect" onclick="document.getElementById('channeltxt').innerHTML = '{{name}}';document.getElementById('channellogo').src='ChannelLogos/{{logo}}';document.getElementById('bottomguide').src = '{{channelUrl}}';document.getElementById('playback'). src ='https://projectFlux.netlify.com/{{viewer}}';">
+          <img class="channel-logo" src="/ChannelLogos/{{logo}}">
+   <div class="channel" onclick="" >
     
      <div class="text-container">
      <h5>{{name}}</h5>
@@ -327,12 +327,12 @@ M.toast({html: toastHTML, displayLength: 10000, completeCallback: function(){ale
 </script>
 <div class="bottom-menu">
   <details>
-    <summary>
-<div class="channel-button">  <img  class="channel-logo" src="/ChannelLogos/abc.svg">
+    <summary onclick="document.getElementById('bottomguide').src = guidevalue; ">
+<div class="channel-button">  <img id="bottomlogo" class="channel-logo" src="/ChannelLogos/abc.svg">
   <div class="channel">
    
     <div class="text-container">
-    <h5>ABC</h5>
+    <h5 id="bottomname">ABC</h5>
     <p>Now Playing</p>
    </div>
  
@@ -342,7 +342,7 @@ M.toast({html: toastHTML, displayLength: 10000, completeCallback: function(){ale
 
     <div class="guide-sect">
       <div class="guide-item">
-<iframe src="https://streamingtvguides.com/Channel/AETV"></iframe>
+<iframe id="bottomguide" src="https://streamingtvguides.com/Channel/AETV"></iframe>
 </div>
     </div>
   </details>
