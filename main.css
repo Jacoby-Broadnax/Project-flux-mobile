@@ -52,7 +52,7 @@ body.darkclass .tabs .indicator {
 
   /*-------------------------------------Play Back Container------------------------------------------*/
 
-#playback {width: 106%; border: none;height: 210px;left: 0px; z-index: 501; z-index: 501;;margin-top: 5px;transition: 0.15s ease;position: fixed; top: 49px;z-index: 800;left: 0px;background-color: white;display: none;}
+#playback {width: 106%; border: none;height: 210px;left: 0px; z-index: 501; z-index: 501;;margin-top: 5px;transition: 0.15s ease;position: fixed; top: 49px;z-index: 800;left: 0px;background-color: white;}
 
   #playback.scrolled {box-shadow: 0px 0px 29px 2px rgba(0,0,0,0.17);top: 0px;margin-top: 0px;;}
 
