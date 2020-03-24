@@ -290,16 +290,7 @@ function loaded(){
 
       </div>
   </div>
-  <script>
-    $(window).scroll(function () {
-      var scroll = $(window).scrollTop();
-      if (scroll > 0) {
-        $("#playback").addClass("scrolled");
-      } else {
-        $("#playback").removeClass("scrolled");
-      }
-    });
-  </script>
+ 
     <script>
       $(window).scroll(function () {
         var scroll = $(window).scrollTop();
@@ -334,6 +325,26 @@ M.toast({html: toastHTML, displayLength: 10000, completeCallback: function(){ale
 
 
 </script>
+<div class="bottom-menu">
+  <details>
+    <summary>
+<div class="channel-button">  <img  class="channel-logo" src="/ChannelLogos/{{logo}}">
+  <div class="channel">
+   
+    <div class="text-container">
+    <h5>ABC</h5>
+    <p>Now Playing</p>
+   </div>
+ 
+    </div></div>
+    </summary>
+
+
+    <div class="guide-sect">
+<iframe src="https://streamingtvguides.com/Channel/AETV"></iframe>
+    </div>
+  </details>
+</div>
 </body>
 
 </html>
