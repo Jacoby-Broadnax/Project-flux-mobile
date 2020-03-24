@@ -109,10 +109,10 @@
 
     {{#each this}}
   
-    <button id="au{{id}}" ondblclick = "localStorage.setItem('fav{{id}}', 'null');window.navigator.vibrate(50);document.getElementById('au{{id}}').style.display = 'none';M.toast({html: '{{name}} Removed From Favorites'})"  
+    <button  id="au{{id}}" ondblclick = "localStorage.setItem('fav{{id}}', 'null');window.navigator.vibrate(50);document.getElementById('au{{id}}').style.display = 'none';M.toast({html: '{{name}} Removed From Favorites'})"  
     
     onclick="document.getElementById('bottomguide').src = '{{channelUrl}}';document.getElementById('bottomname').innerHTML= '{{name}}';document.getElementById('bottomlogo').src= 'ChannelLogos/{{logo}}';document.getElementById('channeltxt').innerHTML = '{{name}}';document.getElementById('channellogo').src='ChannelLogos/{{logo}}';document.getElementById('playback'). src ='https://projectFlux.netlify.com/{{viewer}}';" class="waves-effect favorite-icon" >
-      <img onload="document.getElementById('au{{id}}').classList.add(localStorage.getItem('fav{{id}}'));" src="/ChannelLogos/{{logo}}">
+      <img class="{{color}}" onload="document.getElementById('au{{id}}').classList.add(localStorage.getItem('fav{{id}}'));" src="/ChannelLogos/{{logo}}">
     </button>
      
       {{/each}}
@@ -165,7 +165,7 @@ function loaded(){
       <div><img src="/Branding/tvflux logo app.svg"></div>
     </div>
 
-    <button class="darkmode-open"><i class="material-icons">menu</i></button>
+    <button class="darkmode-open"  onclick="document.getElementById('darkmode-sect').style.display = 'block'"><i class="material-icons">nights_stay</i></button>
   </div>
 
 
@@ -246,7 +246,7 @@ function loaded(){
         <div class="sub-dark">
          <h5>Dark Mode | Beta</h5>
          <p>This feature is in Beta take this into consideration when using this feature</p>
-          <div><a onclick="launch_toast()" class="darkmode F btn black darken-4">Enable</a></div>
+          <div><a onclick="launch_toast()" class="darkmode F btn darken-4 dark-btn">Enable</a></div>
           <div><a class="normalmode F btn-flat">Disable</a></div>
          
         </div>

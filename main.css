@@ -377,7 +377,9 @@ label>img:active {}
 
 .black {background-color: white !important;}
 
+.darkmode-open {position: fixed; right: 10px; top: 10px; z-index: 550;background-color: white;border: none;}
 
+.dark-btn {background-color: black !important;}
 
 body.darkclass .sub-dark {background-color: black;}
 
@@ -391,12 +393,23 @@ body.darkclass .logo-container {background-color: black;}
 
 body.darkclass .favoritexm > h3 {color: white;}
 
-body.darkclass .channel-logo {background-color: rgb(63, 63, 63);width: 60px;object-fit: scale-down;padding-right: 7px;padding-left: 7px;border-radius: 50px;}
+body.darkclass .channel-logo {}
 
-body.darkclass .favorite-icon {background-color: rgb(63, 63, 63);border: none;}
+body.darkclass .favorite-icon {background-color: black;border-color: rgb(65, 65, 65);}
+
 
 body.darkclass .text-container > h5 {color: white;}
 
 body.darkclass .text-container > p {color: rgb(167, 167, 167);}
 
-body.darkclass .favorite-go > button {color: white;}
+body.darkclass .favorite-go > button {color: white;border-color: rgb(65, 65, 65);}
+
+body.darkclass .favorite-go > button > img {filter: invert();}
+
+body.darkclass .darkmode-open {filter: invert();}
+
+body.darkclass .black {filter: invert(1);}
+
+body.darkclass .dark-btn {border:none; ;color:rgb(145, 145, 145)}
+
+body.darkclass .normalmode {color: white;border: solid 1px rgb(65, 65, 65) ;}
