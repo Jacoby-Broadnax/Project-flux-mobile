@@ -111,7 +111,7 @@
   
     <button  id="au{{id}}" ondblclick = "localStorage.setItem('fav{{id}}', 'null');window.navigator.vibrate(50);document.getElementById('au{{id}}').style.display = 'none';M.toast({html: '{{name}} Removed From Favorites'})"  
     
-    onclick="document.getElementById('bottomguide').src = '{{channelUrl}}';document.getElementById('bottomname').innerHTML= '{{name}}';document.getElementById('bottomlogo').src= 'ChannelLogos/{{logo}}';document.getElementById('channeltxt').innerHTML = '{{name}}';document.getElementById('channellogo').src='ChannelLogos/{{logo}}';document.getElementById('playback'). src ='https://projectFlux.netlify.com/{{viewer}}';" class="waves-effect favorite-icon" >
+    onclick="document.getElementById('buA').style.borderColor = '{{color}}';document.getElementById('bottomguide').src = '{{channelUrl}}';document.getElementById('bottomname').innerHTML= '{{name}}';document.getElementById('bottomlogo').src= 'ChannelLogos/{{logo}}';document.getElementById('channeltxt').innerHTML = '{{name}}';document.getElementById('channellogo').src='ChannelLogos/{{logo}}';document.getElementById('playback'). src ='https://projectFlux.netlify.com/{{viewer}}';" class="waves-effect favorite-icon" >
       <img class="{{color}}" onload="document.getElementById('au{{id}}').classList.add(localStorage.getItem('fav{{id}}'));" src="/ChannelLogos/{{logo}}">
     </button>
      
@@ -338,7 +338,7 @@ M.toast({html: toastHTML, displayLength: 10000, completeCallback: function(){ale
 <div class="bottom-menu">
   <details id="buA">
     <summary onclick="document.getElementById('bottomguide').src = guidevalue; ">
-<div class="channel-button">  <img id="bottomlogo" class="channel-logo" src="/ChannelLogos/abc.svg">
+<div class="channel-button">  <img id="bottomlogo" class="channel-logo " src="/ChannelLogos/abc.svg">
   <div class="channel">
    
     <div class="text-container">
