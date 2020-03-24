@@ -24,6 +24,10 @@ button:focus {background-color: transparent !important;}
     color: #000;
 }
 
+@media screen and (orientation:landscape) {
+  .tabs {display: none;}
+}
+
 .ad-container {margin: auto; width: 320px;padding-top: 10px;}
 
 .logo-container > div {margin: auto; width: 338px;;}
