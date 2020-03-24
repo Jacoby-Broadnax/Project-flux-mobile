@@ -129,9 +129,11 @@ border-radius: 7px;
 
   /*--------------------------------------Bottom Menu---------------------------------*/
 
-  .bottom-menu {position:fixed;top:0px; width: 100%;background-color: white;left: 0px;z-index: 150;}
+  .bottom-menu {position:fixed;top:0px; width: 100%;background-color: white;left: 0px;z-index: 150; box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.14);}
 
-  .bottom-menu > details {background-color: white;position: fixed;bottom: 0px;width: 100%;transition: 0.3s ease;}
+  .bottom-menu > details {background-color: white;position: fixed;bottom: 0px;width: 100%;transition: 0.3s ease; box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.14);}
+
+  .bottom-menu > details > summary:focus {outline: none;border: none;}
 
   .bottom-menu > details[open] > summary {position: fixed;top: 264px;width: 100%;background-color: white;z-index: 150;bottom:initial;border-bottom: none;}
 
