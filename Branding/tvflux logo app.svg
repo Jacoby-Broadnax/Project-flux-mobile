@@ -6,6 +6,6 @@
   </defs>
   <g id="tvflux_logo_app" data-name="tvflux logo app" clip-path="url(#clip-tvflux_logo_app)">
     <text id="TV" transform="translate(99 6)" font-size="27" font-family="SegoeUI, Segoe UI"><tspan x="0" y="29">TV</tspan></text>
-    <text id="OME.GA" transform="translate(132 6)" font-size="27" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="0" y="29">OME.GA</tspan></text>
+    <text id="OME.GA" transform="translate(137 6)" font-size="27" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="0" y="29">OME.GA</tspan></text>
   </g>
 </svg>
