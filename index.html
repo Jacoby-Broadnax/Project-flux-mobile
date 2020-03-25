@@ -76,7 +76,7 @@
      display:none;
    }
    </style>
-<div class="favorite-go">
+<div style="display: none;" class="favorite-go">
   <button id="ju{{id}}" class="waves-effect" onclick=";document.getElementById('au{{id}}').style.display = 'inline-block';localStorage.setItem('fav{{id}}', 'favorite');M.toast({html: '{{name}} Added to favorites'})">
     Add To Favorites
   
@@ -181,7 +181,7 @@ function loaded(){
     </div>
 
    
-<div class="favoritexm" id="fvt">
+<div style="display: none;" class="favoritexm" id="fvt">
   <h3>Favorites</h3>
   <div class="favorite-overflow" id="items2">
    
