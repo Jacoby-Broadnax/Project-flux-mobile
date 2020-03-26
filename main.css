@@ -445,8 +445,6 @@ body.darkclass .favorite-go > button {color: white;border-color: rgb(65, 65, 65)
 
 body.darkclass .favorite-go > button > img {filter: invert();}
 
-body.darkclass .darkmode-open {filter: invert();}
-
 body.darkclass .black {filter: invert(1);}
 
 body.darkclass .dark-btn {border:none; ;color:rgb(145, 145, 145)}
