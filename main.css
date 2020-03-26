@@ -157,9 +157,9 @@ border-radius: 7px;
 
  .bottom-menu > details[open] {position: fixed;top: 0px;;}
 
-  .guide-sect  {width: 100%;position: fixed;top: -50px;z-index: -1;left: 0px;border: none;}
+  .guide-sect  {width: 100%;position: fixed;top: 190px;z-index: -1;left: 0px;border: none;}
 
-  .guide-item {margin: auto; width: 330px;}
+  .guide-item {margin: auto; width: 350px;}
 
   .guide-item > iframe {height: 1200px;width: 100%;border: none;filter: invert(1);}
 
