@@ -473,3 +473,7 @@ body.darkclass .swipe-2 {}
 body.darkclass .tabs {background-color: black;}
 
 body.darkclass .tabs .tab a {color: white;}
+
+body.darkclass .expand-btn > i {color: white;}
+
+body.darkclass .collapse-btn > i {color: white;}
