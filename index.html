@@ -59,7 +59,7 @@
 
      
   
-        <button  data-aos="fade-in" class="channel-button waves-effect" onclick="var color = '{{color}}';document.querySelector('meta[name=theme-color]').setAttribute('content', color);document.getElementById('buA').setAttribute('open', 'true');document.getElementById('buA').style.borderColor = '{{color}}';document.getElementById('accent').style.backgroundColor = '{{color}}';document.getElementById('playback').style.backgroundColor = '{{color}}';document.getElementById('channeltxt').innerHTML = '{{name}}';document.getElementById('bottomname').innerHTML= '{{name}}';document.getElementById('bottomlogo').src= 'ChannelLogos/{{logo}}';document.getElementById('channellogo').src='ChannelLogos/{{logo}}';document.getElementById('bottomguide').src = '{{channelUrl}}';document.getElementById('playback'). src ='https://projectFlux.netlify.com/{{viewer}}';">
+        <button  data-aos="fade-in" class="channel-button waves-effect" onclick="var color = '{{color}}';document.querySelector('meta[name=theme-color]').setAttribute('content', color);document.getElementById('buA').setAttribute('open', 'true');document.getElementById('buA').style.borderColor = '{{color}}';document.getElementById('expbtn').style.backgroundColor = '{{color}}';document.getElementById('colbtn').style.backgroundColor = '{{color}}';document.getElementById('accent').style.backgroundColor = '{{color}}';document.getElementById('playback').style.backgroundColor = '{{color}}';document.getElementById('channeltxt').innerHTML = '{{name}}';document.getElementById('bottomname').innerHTML= '{{name}}';document.getElementById('bottomlogo').src= 'ChannelLogos/{{logo}}';document.getElementById('channellogo').src='ChannelLogos/{{logo}}';document.getElementById('bottomguide').src = '{{channelUrl}}';document.getElementById('playback'). src ='https://projectFlux.netlify.com/{{viewer}}';">
           <img class="channel-logo {{color}}" src="/ChannelLogos/{{logo}}">
    <div class="channel" onclick="" >
     
@@ -227,7 +227,7 @@ function loaded(){
         </div>    
       </div>
     </div>
-    <script data-cfasync='false' type='text/javascript' src='//p377554.clksite.com/adServe/banners?tid=377554_740926_6&type=shadowbox&size=17'></script>
+
     <div id="all" class="col ">
     
           <script src="cast.js"></script>
@@ -338,10 +338,10 @@ M.toast({html: toastHTML, displayLength: 10000, completeCallback: function(){ale
 <div class="bottom-menu">
   <details id="buA">
     <summary onclick="document.getElementById('bottomguide').src = guidevalue; ">
-      <div class="expand-btn">
+      <div class="expand-btn" id="expbtn">
         <i class="material-icons">keyboard_arrow_up</i>
       </div>
-      <div class="collapse-btn">
+      <div class="collapse-btn" id="colbtn">
         <i class="material-icons">keyboard_arrow_down</i>
       </div>
 <div class="channel-button">  <img id="bottomlogo" class="channel-logo " src="/ChannelLogos/abc.svg">
