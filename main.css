@@ -469,3 +469,7 @@ body.darkclass .guide-item {filter:invert(1);}
 body.darkclass .swipe-2 > iframe {filter: invert(1);}
 
 body.darkclass .swipe-2 {}
+
+body.darkclass .tabs {background-color: black;}
+
+body.darkclass .tabs .tab a {color: white;}
