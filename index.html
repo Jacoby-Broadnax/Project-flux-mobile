@@ -59,7 +59,7 @@
 
      
   
-        <button  data-aos="fade-in" class="channel-button waves-effect" onclick="document.getElementById('buA').setAttribute('open', 'true');document.getElementById('buA').style.borderColor = '{{color}}';document.getElementById('channeltxt').innerHTML = '{{name}}';document.getElementById('bottomname').innerHTML= '{{name}}';document.getElementById('bottomlogo').src= 'ChannelLogos/{{logo}}';document.getElementById('channellogo').src='ChannelLogos/{{logo}}';document.getElementById('bottomguide').src = '{{channelUrl}}';document.getElementById('playback'). src ='https://projectFlux.netlify.com/{{viewer}}';">
+        <button  data-aos="fade-in" class="channel-button waves-effect" onclick="document.getElementById('buA').setAttribute('open', 'true');document.getElementById('buA').style.borderColor = '{{color}}';document.getElementById('accent').style.backgroundColor = '{{color}}';document.getElementById('channeltxt').innerHTML = '{{name}}';document.getElementById('bottomname').innerHTML= '{{name}}';document.getElementById('bottomlogo').src= 'ChannelLogos/{{logo}}';document.getElementById('channellogo').src='ChannelLogos/{{logo}}';document.getElementById('bottomguide').src = '{{channelUrl}}';document.getElementById('playback'). src ='https://projectFlux.netlify.com/{{viewer}}';">
           <img class="channel-logo {{color}}" src="/ChannelLogos/{{logo}}">
    <div class="channel" onclick="" >
     
@@ -161,7 +161,7 @@ function loaded(){
 </script>
 
   <div class="nav">
-    <div class="logo-container">
+    <div class="logo-container" id="accent">
       <div><img src="/Branding/tvflux logo app.svg"></div>
     </div>
 
