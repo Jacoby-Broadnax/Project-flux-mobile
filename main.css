@@ -477,3 +477,5 @@ body.darkclass .tabs .tab a {color: white;}
 body.darkclass .expand-btn > i {color: white;}
 
 body.darkclass .collapse-btn > i {color: white;}
+
+body.darkclass details {border-color: white;}
