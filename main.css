@@ -60,7 +60,7 @@ body.darkclass .tabs .indicator {
 
   /*-------------------------------------Play Back Container------------------------------------------*/
 
-#playback {width: 106%; border: none;height: 210px;left: 0px; z-index: 501; z-index: 501;;margin-top: 5px;transition: 0.15s ease;position: fixed; top: 49px;z-index: 800;left: 0px;background-color: black;}
+#playback {width: 109%; border: none;height: 225px;left: 0px; z-index: 501; z-index: 501;;margin-top: 5px;transition: 0.15s ease;position: fixed; top: 49px;z-index: 800;left: -8px;background-color: black;}
 
   #playback.scrolled {box-shadow: 0px 0px 29px 2px rgba(0,0,0,0.17);top: 0px;margin-top: 0px;;}
 
@@ -404,7 +404,7 @@ label>img:active {}
 
 /*-------------------------------------------------Dark Mode-----------------------------------*/
 
-.darkmode-sect {position: fixed; left: 0px; top: 0px; width: 100%;height: 100vh; background-color: rgba(0, 0, 0, 0.329);z-index: 800;transition: 0.2s ease;}
+.darkmode-sect {position: fixed; left: 0px; top: 0px; width: 100%;height: 100vh; background-color: rgba(0, 0, 0, 0.329);z-index: 800;transition: 0.2s ease;display:none}
 
 .sub-dark {background-color: white;position: fixed;bottom: 0px;width: 100%;transition: 0.2s ease;left: 0px;}
 
