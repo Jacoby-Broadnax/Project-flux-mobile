@@ -87,9 +87,9 @@ body.darkclass .tabs .indicator {
 
   .stream-list {margin-top: -40px;margin-left: 125px ;position: absolute; z-index: 625;top: 360px; left: 0px;;display: none;}
 
-  .tv-guide {width:100%;height:545px;filter: invert() brightness(2) ;float: left;margin-top: -80px;border: none;position: relative;z-index: -5;display: none;}
+  .tv-guide {width:100%;height:545px;float: left;margin-top: 0px;border: none;position: relative;z-index: -5;display: none;}
 
-  .tv-guide-container {filter: saturate(0)}
+  .tv-guide-container {}
 
   .tv-view {background-color: transparent;z-index: 150;position: relative;}
 
@@ -163,13 +163,11 @@ border-radius: 7px;
 
  .bottom-menu > details[open] {position: fixed;top: 0px;;}
 
-  .guide-sect  {width: 100%;position: fixed;top: 190px;z-index: -1;left: 0px;border: none;}
+  .guide-sect  {width: 100%;position: fixed;top: 315px;z-index: -1;left: 0px;border: none;}
 
-  .guide-item {margin: auto; width: 350px;}
+  .guide-item > iframe {height: 1200px;width: 100%;border: none;}
 
-  .guide-item > iframe {height: 1200px;width: 100%;border: none;filter: invert(1);}
-
-  .guide-sect {filter:brightness(1.5);width: 100%;}
+  .guide-sect {width: 100%;}
 
   summary > .channel-button > .channel > .text-container > p {padding-top: 5px;padding-left: 0px;margin-left: -1px;}
 
