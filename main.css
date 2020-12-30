@@ -32,7 +32,7 @@ button:focus {background-color: transparent !important;}
 
 .logo-container > div {margin: auto; width: 338px;;}
 
-.logo-container {position: fixed; left:0px; top: 0px;z-index: 502;width: 100%;background-color: black;}
+.logo-container {position: fixed; left:0px; top: 0px;z-index: 502;width: 100%;background-color: black;display: none;}
 
 .logo-container > div > img {filter:invert(1);margin-top:-3px}
 
@@ -60,7 +60,7 @@ body.darkclass .tabs .indicator {
 
   /*-------------------------------------Play Back Container------------------------------------------*/
 
-#playback {margin: auto;width: 100%;border: none;overflow: hidden;height: 182px;}
+#playback {margin: auto;width: 100%;border: none;overflow: hidden;height: 174px;}
 
 .playback-container > div {margin:auto;width: 330px;}
 
