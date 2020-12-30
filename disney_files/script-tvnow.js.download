@@ -1,0 +1,133 @@
+// Global Variables
+var timezone = "America/New_York";
+
+// Json Location Path
+var json_location_path = "json/";
+
+ //Removes the # character
+var program_id = 1;
+if (window.location.hash) {
+    program_id = window.location.hash.substring(1);
+}
+
+function getDoubleDigit(number) {
+    if (number.toString().length > 1) return number + "";
+    return "0" + number;
+}
+function showtable() {
+    jQuery(".schedule-showtable").each(function (index) {
+        jQuery(this).attr("id", "showtable-" + (index + 1));
+        var showtableString = "";
+        var element = jQuery(this);
+        $.ajax({
+            url: json_location_path + program_id +".json",
+            dataType: "json",
+            cache: false,
+            method: "GET",
+            success: function (data) {
+                var days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+                var months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+                showtableString += '<div class="showtable-list">';
+                var programs = [];
+                var now = moment().tz(timezone).format();
+                for (var index_ in data.items) {
+                    var item = data.items[index_];
+                    for (var t = 0; t < item.length; t++) {
+                        if(moment().tz(timezone).format('YYYY-MM-DD') <= moment.unix(item[t].start_timestamp).tz(timezone).format('YYYY-MM-DD')) {
+
+                            var unixst = item[t].start_timestamp;
+                            var st = moment.unix(unixst);
+                            var start_time = st.tz(timezone).format();
+
+
+                            // console.log(now);
+                            var day = st.tz(timezone).format('dddd');
+                            var month = months[parseInt(st.tz(timezone).format('M')) - 1];
+                            var date = getDoubleDigit(st.tz(timezone).format('D'));
+                            var year = st.tz(timezone).format('YY');
+                            var start_hours = getDoubleDigit(st.tz(timezone).format("hh:mm a"));
+
+                            var unixet = item[t].end_timestamp;
+                            var et = moment.unix(unixet);
+                            var end_time = et.tz(timezone).format();
+                            var end_hours = getDoubleDigit(et.tz(timezone).format("hh:mm a"));
+                            var key = day + "_" + month + "_" + date + "_" + year;
+                            
+                            var title = item[t].name;
+                            if (now >= start_time && now < end_time) title = '<span class="live_flash"></span> ' + title + ' <span class="live-now"> LIVE NOW</span>';
+                            var programguide = { id: item[t].id, name: title, start_time: start_hours, end_time: end_hours, color: item[t].color, description: item[t].description };
+                            if (programs[key] == undefined) programs[key] = [];
+                            programs[key].push(programguide);
+                        }
+                    }
+                }
+                for (var index_ in programs) {
+                    var item = programs[index_];
+                    var header_info = index_.toString().split("_");
+                    if (item.length) {
+                        showtableString += '<div class="showtable-day">';
+                        showtableString += `<div class="showtable-header">${header_info[0]}<span>${header_info[1]} ${header_info[2]}, ${header_info[3]}</span></div>`;
+                        showtableString += '<div class="showtable-content">';
+                        for (var t = 0; t < item.length; t++) {
+                            if (item[t].start_time && item[t].end_time) {
+                                if (item[t].end_time) {
+                                    var showtable_end_time = " - " + item[t].end_time;
+                                } else {
+                                    var showtable_end_time = "";
+                                }
+                                showtableString +=
+                                    '<div class="showtable-item">' +
+                                    '<span class="showtable-color c-'+
+                                    item[t].color +
+                                    '"></span>' +
+                                    '<a class="showtable-title" href="#' +
+                                    element.attr("id") +
+                                    "-popup-" +
+                                    item[t].id +
+                                    '" class="open-popup-link">' +
+                                    '<span class="showtable-time">' +
+                                    item[t].start_time +
+                                    // showtable_end_time +
+                                    "</span>" +
+                                    '<span class="showtable-name">' +
+                                    item[t].name +
+                                    "</span>" +
+                                    "</a>" +
+                                    '<div id="' +
+                                    element.attr("id") +
+                                    "-popup-" +
+                                    item[t].id +
+                                    '" class="showtable-popup zoom-anim-dialog mfp-hide">' +
+                                    '<div class="popup-header c-'+
+                                    item[t].color+
+                                    '">' +
+                                    item[t].name +
+                                    "</div>" +
+                                    '<div class="popup-body">' +
+                                    '<div class="showtable-time">' +
+                                    item[t].start_time +
+                                    showtable_end_time +
+                                    "</div>" +
+                                    '<div class="showtable-desc">' +
+                                    item[t].description +
+                                    "</div>" +
+                                    "</div>" +
+                                    "</div>" +
+                                    "</div>";
+                            }
+                        }
+                        showtableString += "</div>";
+                        showtableString += "</div>";
+                    }
+                }
+                showtableString += "</div>";
+                element.html(showtableString);
+                element.find(".showtable-title").magnificPopup({ type: "inline", removalDelay: 800, mainClass: "my-mfp-zoom-in" });
+                setTimeout(showtable, 60 * 1000);
+            },
+        });
+    });
+}
+jQuery(document).ready(function () {
+    showtable();
+});
