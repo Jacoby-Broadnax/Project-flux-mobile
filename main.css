@@ -66,7 +66,7 @@ body.darkclass .tabs .indicator {
 
   #playback.scrolled {box-shadow: 0px 0px 29px 2px rgba(0,0,0,0.17);top: 0px;margin-top: 0px;;}
 
-  .playback-container {width: 109%; border: none;left: 0px; z-index: 501; z-index: 501;;margin-top: -5px;transition: 0.15s ease;position: fixed; top: 124px;z-index: 800;left: -17px;background-color: black;}
+  .playback-container {width: 109%; border: none;left: 0px; z-index: 501; z-index: 501;;margin-top: -5px;transition: 0.15s ease;position: fixed; top: 76px;z-index: 800;left: -17px;background-color: black;}
 
 
   .videojs-player {width: 100%; height: 100vh;border: none;;}
@@ -157,7 +157,7 @@ border-radius: 7px;
 
   .bottom-menu {position:fixed;top:0px; width: 100%;background-color: white;left: 0px;z-index: 150; box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.14);}
 
-  .bottom-menu > details {background-color: white;position: fixed;top: 0px;width: 100%;transition: 0.3s ease; box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.14);padding-bottom: 3px;border-top: solid 50px black;}
+  .bottom-menu > details {background-color: white;position: fixed;top: 0px;width: 100%;transition: 0.3s ease; box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.14);padding-bottom: 3px;border-top: solid 3px black;}
 
   .bottom-menu > details > summary:focus {outline: none;border: none;}
 
