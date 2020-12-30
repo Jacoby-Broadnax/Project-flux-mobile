@@ -62,7 +62,7 @@ body.darkclass .tabs .indicator {
 
 #playback {margin: auto;width: 100%;border: none;overflow: hidden;height: 174px;}
 
-.playback-container > div {margin:auto;width: 330px;}
+.playback-container > div {margin:auto;width:345px}
 
   #playback.scrolled {box-shadow: 0px 0px 29px 2px rgba(0,0,0,0.17);top: 0px;margin-top: 0px;;}
 
