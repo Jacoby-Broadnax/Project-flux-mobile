@@ -60,13 +60,13 @@ body.darkclass .tabs .indicator {
 
   /*-------------------------------------Play Back Container------------------------------------------*/
 
-#playback {margin: auto;width: 100%;border: none;overflow: hidden;}
+#playback {margin: auto;width: 100%;border: none;overflow: hidden;height: 182px;}
 
 .playback-container > div {margin:auto;width: 330px;}
 
   #playback.scrolled {box-shadow: 0px 0px 29px 2px rgba(0,0,0,0.17);top: 0px;margin-top: 0px;;}
 
-  .playback-container {width: 109%; border: none;height: 220px;left: 0px; z-index: 501; z-index: 501;;margin-top: -5px;transition: 0.15s ease;position: fixed; top: 49px;z-index: 800;left: -8px;background-color: black;}
+  .playback-container {width: 109%; border: none;left: 0px; z-index: 501; z-index: 501;;margin-top: -5px;transition: 0.15s ease;position: fixed; top: 49px;z-index: 800;left: -17px;background-color: black;}
 
 
   .videojs-player {width: 100%; height: 100vh;border: none;;}
