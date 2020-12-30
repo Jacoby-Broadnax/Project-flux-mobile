@@ -8,7 +8,7 @@
       rel="stylesheet">
   <title>TV Omega | Free Live TV</title>
   <!-- Compiled and minified CSS -->
-  <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+  <link rel="shortcut icon" href="Branding/512px logo.png" type="image/x-icon" />
 <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
 <meta name="msapplication-TileColor" content="#000000">
 <meta name="theme-color" content="#000000">
@@ -110,7 +110,7 @@
   
     <button  id="au{{id}}" ondblclick = "localStorage.setItem('fav{{id}}', 'null');window.navigator.vibrate(50);document.getElementById('au{{id}}').style.display = 'none';M.toast({html: '{{name}} Removed From Favorites'})"  
     
-    onclick="document.getElementById('buA').style.borderColor = '{{color}}';document.getElementById('bottomguide').src = '{{channelUrl}}';document.getElementById('bottomname').innerHTML= '{{name}}';document.getElementById('bottomlogo').src= 'ChannelLogos/{{logo}}';document.getElementById('channeltxt').innerHTML = '{{name}}';document.getElementById('pb-container').style.backgroundColor = '{{color}}';document.getElementById('channellogo').src='ChannelLogos/{{logo}}';document.getElementById('playback'). src ='https://projectFlux.netlify.com/{{viewer}}';" class="waves-effect favorite-icon" >
+    onclick="document.getElementById('buA').style.borderColor = '{{color}}';document.getElementById('bottomguide').src = '{{channelUrl}}';document.getElementById('bottomname').innerHTML= '{{name}}';document.getElementById('bottomlogo').src= 'ChannelLogos/{{logo}}';document.getElementById('channeltxt').innerHTML = '{{name}}';document.getElementById('pb-container').style.background = '{{color}}';document.getElementById('channellogo').src='ChannelLogos/{{logo}}';document.getElementById('playback'). src ='https://projectFlux.netlify.com/{{viewer}}';" class="waves-effect favorite-icon" >
       <img class="{{color}}" onload="document.getElementById('au{{id}}').classList.add(localStorage.getItem('fav{{id}}'));" src="/ChannelLogos/{{logo}}">
     </button>
      
