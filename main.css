@@ -34,7 +34,7 @@ button:focus {background-color: transparent !important;}
 
 .logo-container {position: fixed; left:0px; top: 0px;z-index: 502;width: 100%;background-color: black;}
 
-.logo-container > div > img {filter:invert(1)}
+.logo-container > div > img {filter:invert(1);margin-top:-3px}
 
 .tabs {margin-top: 0px;border-bottom: solid 1px lightgray;}
 
