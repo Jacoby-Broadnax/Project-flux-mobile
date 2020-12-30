@@ -1,0 +1,11 @@
+#header-text-nav-container {display: none;}
+
+.entry-title {display: none;}
+
+.entry-content > strong {display: none;}
+
+#secondary {display: none;}
+
+.iframe-container > iframe {margin-left: -10px;}
+
+.article-content.clearfix {margin-top: -10px;}
