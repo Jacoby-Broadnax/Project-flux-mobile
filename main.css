@@ -60,9 +60,9 @@ body.darkclass .tabs .indicator {
 
   /*-------------------------------------Play Back Container------------------------------------------*/
 
-#playback {margin: auto;width: 100%;border: none;overflow: hidden;height: 182px}
+#playback {margin: auto;width: 100%;border: none;overflow: hidden;height: 190px}
 
-.playback-container > div {margin:auto;width:345px}
+.playback-container > div {margin:auto;width:355px}
 
   #playback.scrolled {box-shadow: 0px 0px 29px 2px rgba(0,0,0,0.17);top: 0px;margin-top: 0px;;}
 
